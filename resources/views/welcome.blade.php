@@ -55,7 +55,8 @@
     <link rel='stylesheet' id='magnificPopup-css'  href='https://auxx.me/wp-content/plugins/wp-review/public/css/magnific-popup.css?ver=1.1.0' type='text/css' media='all' />
     <link rel='stylesheet' id='wp_review-style-css'  href='https://auxx.me/wp-content/plugins/wp-review/public/css/wp-review.css?ver=5.0.8' type='text/css' media='all' />
     <link rel='stylesheet' id='td-theme-css'  href='https://auxx.me/wp-content/themes/Newspaper/style.css?ver=8.7.2' type='text/css' media='all' />
-    <script>if (document.location.protocol != "https:") {document.location = document.URL.replace(/^http:/i, "https:");}</script><script type='text/javascript' src='https://auxx.me/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+    {{--<script>if (document.location.protocol != "https:") {document.location = document.URL.replace(/^http:/i, "https:");}</script>--}}
+    <script type='text/javascript' src='https://auxx.me/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
     <script type='text/javascript' src='https://auxx.me/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
     <link rel='https://api.w.org/' href='https://auxx.me/wp-json/' />
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://auxx.me/xmlrpc.php?rsd" />
