@@ -1137,7 +1137,9 @@ Header style 7
             <div id="td_uid_19_5bc435a1b8a71" class="tdc-row">
                 <div class="vc_row td_uid_20_5bc435a1b8aaa_rand td-ss-row wpb_row td-pb-row">
                     <div class="vc_column td_uid_21_5bc435a1b8c1d_rand  wpb_column vc_column_container tdc-column td-pb-span8">
-                        <div class="wpb_wrapper">
+                        <div class="wpb_wrapper con-main">
+
+
                             <div class="td_block_wrap td_block_2 td_uid_22_5bc435a1b8fa3_rand td_with_ajax_pagination td-pb-border-top td_block_template_1 td-column-2 td_block_padding"
                                  data-td-block-uid="td_uid_22_5bc435a1b8fa3">
                                 <style>
@@ -1560,6 +1562,11 @@ Header style 7
                                                                                                   data-td_block_id="td_uid_22_5bc435a1b8fa3"><i
                                                 class="td-icon-font td-icon-menu-right"></i></a></div>
                             </div> <!-- ./block -->
+
+
+
+
+
                             <div class="td_block_wrap td_block_1 td_uid_45_5bc435a1bcfec_rand td_with_ajax_pagination td-pb-border-top td_block_template_1 td-column-2"
                                  data-td-block-uid="td_uid_45_5bc435a1bcfec">
                                 <style>
@@ -1942,7 +1949,7 @@ Header style 7
                             <div class="clearfix"></div>
                         </div>
                     </div>
-                    <div class="vc_column td_uid_69_5bc435a1c2395_rand  wpb_column vc_column_container tdc-column td-pb-span4">
+                    <div class="vc_column td_uid_69_5bc435a1c2395_rand  wpb_column vc_column_container tdc-column td-pb-span4 slide-main">
                         <div class="wpb_wrapper">
                             {{--<div class="td_block_wrap td_block_social_counter td_uid_70_5bc435a1c2559_rand td-social-style8 td-social-boxed td-social-font-icons td-pb-border-top td_block_template_1">--}}
                                 {{--<style>--}}

@@ -1,5 +1,27 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";
 
+@media screen and (max-width: 320px) {
+  .con-main {
+    width: 100%;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    background: red !important;
+  }
+}
+
+/*.slide-main {
+  @media screen and (max-width: $break-small) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}*/
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
