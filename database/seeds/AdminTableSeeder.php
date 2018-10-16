@@ -11,9 +11,9 @@ class AdminTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('admins')->insert(
+        DB::table('admins')->insert([
             ['name' => 'Dimuthu Sandaruwan Jayalath', 'email' => 'jayalathdimuthu@gmail.com', 'password' => bcrypt('password'), 'job_title' => 'Admin'],
             ['name' => 'Nelka Arosh', 'email' => 'nelka@gmail.com', 'password' => bcrypt('password'), 'job_title' => 'Admin']
-        );
+        ]);
     }
 }
