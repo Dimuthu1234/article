@@ -47,7 +47,7 @@
                 <li><a href="{{ route('login') }}">Login</a></li>
                 <li><a href="{{ route('register') }}">Register</a></li>
             @else
-                <li class="drop-down"><a href="03_single-post.html">{{ str_limit(Auth::user()->name, 8)}}<i class="ion-arrow-down-b"></i></a>
+                <li class="drop-down"><a href="{{ route('home') }}">{{ str_limit(Auth::user()->name, 8)}}<i class="ion-arrow-down-b"></i></a>
                     <ul class="drop-down-menu drop-down-inner">
                         <li>
                                 <a href="#">
