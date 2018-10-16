@@ -23,3 +23,42 @@
   }
 }*/
 
+
+.panel{
+  border-top: 0 !important;
+  .panel-body{
+
+    padding-top: 1%;
+  }
+  border-radius: 0 !important;
+
+  background: #f5f8fa !important;
+
+
+  input{
+    border-radius: 0 !important;
+  }
+
+  button{
+    border-radius: 0 !important;
+    background: #f8b500;
+    border-color: #f89a00;
+
+    &:hover{
+      background: #f89a00;
+      border-color: #f89a00;
+    }
+  }
+
+  //a{
+    //.btn{
+      .btn-link{
+        color: #f89a00 !important;
+        &:hover{
+          color: #f89a00;
+        }
+      }
+    //}
+  //}
+}
+

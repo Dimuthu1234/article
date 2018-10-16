@@ -1,19 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";
 
-@media screen and (max-width: 320px) {
-  .con-main {
-    width: 100%;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-    background: red !important;
-  }
-}
-
 /*.slide-main {
   @media screen and (max-width: $break-small) {
     width: 100%;
@@ -21,6 +7,39 @@
     flex-direction: column;
   }
 }*/
+
+.panel {
+  border-top: 0 !important;
+  border-radius: 0 !important;
+  background: #f5f8fa !important;
+}
+
+.panel .panel-body {
+  padding-top: 1%;
+}
+
+.panel input {
+  border-radius: 0 !important;
+}
+
+.panel button {
+  border-radius: 0 !important;
+  background: #f8b500;
+  border-color: #f89a00;
+}
+
+.panel button:hover {
+  background: #f89a00;
+  border-color: #f89a00;
+}
+
+.panel .btn-link {
+  color: #f89a00 !important;
+}
+
+.panel .btn-link:hover {
+  color: #f89a00;
+}
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
