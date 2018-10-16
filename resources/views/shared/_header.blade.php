@@ -50,12 +50,13 @@
                 <li class="drop-down"><a href="{{ route('home') }}">{{ str_limit(Auth::user()->name, 8)}}<i class="ion-arrow-down-b"></i></a>
                     <ul class="drop-down-menu drop-down-inner">
                         <li>
-                                <a href="#">
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST">
-                                        {{ csrf_field() }}
-                                        <button>LOGOUT</button>
-                                    </form>
-                                </a>
+                                {{--<a href="#">--}}
+                                    {{--<form id="logout-form" action="{{ route('logout') }}" method="POST">--}}
+                                        {{--{{ csrf_field() }}--}}
+                                        {{--<button>LOGOUT</button>--}}
+                                    {{--</form>--}}
+                                {{--</a>--}}
+                            <a href="{{ route('user.logout') }}">LOGOUT</a>
                         </li>
                     </ul>
                 </li>

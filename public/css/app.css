@@ -26,11 +26,13 @@
   border-radius: 0 !important;
   background: #f8b500;
   border-color: #f89a00;
+  color: #fff !important;
 }
 
 .panel button:hover {
   background: #f89a00;
   border-color: #f89a00;
+  color: #fff !important;
 }
 
 .panel .btn-link {
@@ -39,6 +41,29 @@
 
 .panel .btn-link:hover {
   color: #f89a00;
+}
+
+.dash-box {
+  text-align: center;
+  border: 1px solid black;
+  padding: 50px 25px 50px 25px;
+  background: #19191969;
+  color: #fff;
+}
+
+.dash-box span {
+  font-size: 26px;
+}
+
+.admin-sidebar ul li {
+  width: 100%;
+  text-align: left;
+  border: 1px solid black;
+  padding: 10%;
+  background: #9a9c9d;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /*!

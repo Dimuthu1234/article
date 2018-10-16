@@ -43,10 +43,12 @@
     border-radius: 0 !important;
     background: #f8b500;
     border-color: #f89a00;
+    color: #fff !important;
 
     &:hover{
       background: #f89a00;
       border-color: #f89a00;
+      color: #fff !important;
     }
   }
 
@@ -60,5 +62,41 @@
       }
     //}
   //}
+}
+
+//footer {
+//  position: fixed;
+//  left: 0;
+//  bottom: 0;
+//  width: 100%;
+//}
+
+.dash-box{
+  text-align: center;
+  border: 1px solid black;
+  padding: 50px 25px 50px 25px;
+  //border-radius: 5px;
+  background: #19191969;
+  color: #fff;
+  span{
+    font-size: 26px;
+  }
+}
+
+.admin-sidebar{
+  //border: 1px solid #2b2b2b !important;
+  //border-radius: 5px;
+  ul{
+    li{
+      width: 100%;
+      text-align: left;
+      border: 1px solid black;
+      padding: 10%;
+      background: #9a9c9d;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
 }
 
