@@ -1,3 +1,15 @@
+.note-toolbar {
+  //.panel-heading{
+    button{
+      border-radius: 0 !important;
+      background: #ececec;
+      border-color: #000000;
+      color: #000 !important;
+    //}
+  }
+}
+
+
 .social-icon{
   //border: 1px solid #6767673b;
   //padding: 12px 15px 12px 15px;
@@ -192,3 +204,16 @@
   //border-right: 0 !important;;
 }
 
+
+.cat-list{
+  li{
+    b{
+      a{
+        color: #fff;
+        &:hover{
+          color: #fff;
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";
 
+.note-toolbar button {
+  border-radius: 0 !important;
+  background: #ececec;
+  border-color: #000000;
+  color: #000 !important;
+}
+
 /*.slide-main {
   @media screen and (max-width: $break-small) {
     width: 100%;
@@ -154,6 +161,14 @@
   background: #f8b5002b !important;
   font-size: 14px;
   border-radius: 0 !important;
+}
+
+.cat-list li b a {
+  color: #fff;
+}
+
+.cat-list li b a:hover {
+  color: #fff;
 }
 
 /*!

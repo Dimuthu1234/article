@@ -5,4 +5,6 @@
 
 <script src="{{ asset('js/app.js') }}"></script>
 
+@stack('scripts')
+
 <script src="{{ url('js/scripts.js') }}"></script>

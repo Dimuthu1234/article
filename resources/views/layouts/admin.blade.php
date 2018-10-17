@@ -74,6 +74,7 @@
 </header>
 <section>
     <div class="container">
+        <div id="app">
         <div class="row">
 
             <div class="col-md-12">
@@ -97,6 +98,7 @@
             {{--@include('shared._sidemenu')--}}
 
         </div><!-- row -->
+        </div>
     </div><!-- container -->
 </section>
 

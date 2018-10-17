@@ -19,6 +19,8 @@
     "vue": "^2.1.10"
   },
   "dependencies": {
-    "font-awesome": "^4.7.0"
+    "codemirror": "^5.40.2",
+    "font-awesome": "^4.7.0",
+    "summernote": "^0.8.10"
   }
 }

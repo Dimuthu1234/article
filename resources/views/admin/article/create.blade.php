@@ -53,6 +53,14 @@
                 </div>
 
                 <div class="form-group">
+                    {{--<label for="name" class="col-md-3 control-label">Some text</label>--}}
+
+                    <div class="col-md-10">
+                        <textarea id="summernote" class="form-control" name="description" required>This is Content Editor</textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
                     <div class="col-md-6 col-md-offset-4">
                         <button type="submit" class="btn btn-primary pull-right">
                             Save
@@ -63,3 +71,12 @@
         </div>
     </div>
 @endsection
+
+
+@push('scripts')
+    <script>
+        $(document).ready(function () {
+            $('#summernote').summernote();
+        });
+    </script>
+@endpush

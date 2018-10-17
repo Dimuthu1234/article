@@ -11,7 +11,15 @@ try {
     window.$ = window.jQuery = require('jquery');
 
     require('bootstrap-sass');
+
+    // require('bootstrap/js/tooltip');
+    // require('bootstrap/js/transition');
+    // require('bootstrap/less/bootstrap.less');
+    require('summernote/dist/summernote.css');
+    require('summernote');
+
 } catch (e) {}
+
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
