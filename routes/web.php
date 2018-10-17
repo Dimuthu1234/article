@@ -11,9 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//model binding
+Route::model('article', 'App\Article');
+Route::model('user', 'App\User');
+
+
+
+
+Route::get('/', 'WelcomeController@index');
+
+
 
 Auth::routes();
 
@@ -31,7 +38,15 @@ Route::prefix('admin')->group(function (){
     Route::get('/', 'AdminController@index')->name('admin.dashboard');
     Route::get('/logout', 'Auth\AdminLoginController@logout')->name('admin.logout');
 
+
+//    Route::resource('/article', 'ArticlesController', resourceNames('article'));
 });
 
 
+
+Route::group(['middleware' => 'auth:admin', 'prefix' => 'admin'], function () {
+    // admin article routes
+    Route::resource('/article', 'ArticlesController', resourceNames('article'));
+    Route::resource('/user', 'UsersController', resourceNames('user'));
+});
 

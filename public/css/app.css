@@ -55,6 +55,18 @@
   font-size: 26px;
 }
 
+.aaa {
+  width: 100%;
+  text-align: left;
+  border: 1px solid #f89a00;
+  border-radius: 6px;
+  padding: 10%;
+  background: #f8b500;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .admin-sidebar ul li {
   width: 100%;
   text-align: left;
@@ -64,6 +76,84 @@
   color: #fff;
   font-size: 20px;
   font-weight: bold;
+}
+
+.admin-sidebar ul li a:hover {
+  color: black;
+}
+
+.admin-sidebar ul li a:focus {
+  width: 100%;
+  text-align: left;
+  border: 1px solid #f89a00;
+  border-radius: 6px;
+  padding: 10%;
+  background: #f8b500;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.admin-sidebar ul li:hover {
+  width: 100%;
+  text-align: left;
+  border: 1px solid #f89a00;
+  padding: 10%;
+  background: #f8b500;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.admin-sidebar ul li:focus {
+  width: 100%;
+  text-align: left;
+  border: 1px solid #f89a00;
+  padding: 10%;
+  background: #f8b500;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.admin-sidebar ul li:active {
+  width: 100%;
+  text-align: left;
+  border: 1px solid #f89a00;
+  padding: 10%;
+  background: #f8b500;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.add-button {
+  border: 1px solid #f89a00;
+  color: #fff;
+  background: #f8b500;
+  padding: 1%;
+}
+
+.add-button button {
+  color: #fff;
+}
+
+.add-button button:hover {
+  color: #fff;
+}
+
+.add-button:hover {
+  border: 1px solid #f89a00;
+  color: #fff;
+  background: #f89a00;
+  padding: 1%;
+}
+
+.breadcrumb {
+  border: 1px solid #f8b500;
+  background: #f8b5002b !important;
+  font-size: 14px;
+  border-radius: 0 !important;
 }
 
 /*!
