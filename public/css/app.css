@@ -256,6 +256,32 @@ input:checked + .slider {
   border: 1px solid #f8b500;
 }
 
+.article-show .date {
+  border: 2px solid #f8b500;
+  padding-bottom: 5%;
+  text-align: center;
+  background: rgba(248, 181, 0, 0.05);
+}
+
+.article-show .date .day {
+  font-size: 44px;
+}
+
+.article-show .date .month {
+  font-size: 16px;
+}
+
+.article-show .date .year {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.pagination .active span {
+  background: #f8b500 !important;
+  color: #fff !important;
+  border: 1px solid #f8b500 !important;
+}
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.

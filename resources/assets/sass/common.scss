@@ -295,3 +295,35 @@ input:checked + .slider {
   border-radius: 7px;
   border: 1px solid #f8b500;
 }
+
+.article-show{
+  .date{
+    border: 2px solid #f8b500;
+    padding-bottom: 5%;
+    text-align: center;
+    background: rgba(248, 181, 0, 0.05);
+    .day{
+      font-size: 44px;
+    }
+
+    .month{
+      font-size: 16px;
+      //font-weight: bold;
+    }
+
+    .year{
+      font-size: 22px;
+      font-weight: bold;
+    }
+  }
+}
+
+.pagination .active{
+  //.active{
+    span{
+      background: #f8b500 !important;
+      color: #fff !important;
+      border: 1px solid #f8b500 !important;
+    }
+  //}
+}

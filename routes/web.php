@@ -19,6 +19,8 @@ Route::model('user', 'App\User');
 
 
 Route::get('/', 'WelcomeController@index');
+Route::get('/user/{id}', 'WelcomeController@userShow')->name('userShow');
+Route::get('/article/{id}', 'WelcomeController@articleShow')->name('articleShow');
 
 
 
@@ -44,7 +46,7 @@ Route::prefix('admin')->group(function (){
 
 
 
-Route::group(['middleware' => 'auth:admin', 'prefix' => 'admin'], function () {
+Route::group(['middleware' => ['auth:admin'], 'prefix' => 'admin'], function () {
     // admin article routes
     Route::resource('/article', 'ArticlesController', resourceNames('article'));
     Route::resource('/user', 'UsersController', resourceNames('user'));
