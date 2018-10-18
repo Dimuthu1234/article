@@ -9,13 +9,13 @@
 @section('title-content', $article->title)
 @section('content')
     <div class="col-sm-12 article-show">
-        <div class="col-md-1 date">
+        <div class="col-md-1 date" style="margin-top: 2%">
             <span class="day">{{ \Carbon\Carbon::parse($article->created_at)->format('d') }}</span>
             <span class="month">{{ \Carbon\Carbon::parse($article->created_at)->format('M')}}</span>
             <br><hr>
             <span class="year">{{ \Carbon\Carbon::parse($article->created_at)->format('Y')}}</span>
         </div>
-        <div class="col-md-11">
+        <div class="col-md-11" style="margin-top: 2%">
             <img src="{{ url('images/article/image/'.$article->image) }}" alt="">
             <h2 style="margin-top: 4%">{{ $article->title }}</h2>
 
