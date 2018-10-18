@@ -18,5 +18,7 @@
 
     <link href="{{ url('css/styles.css') }}" rel="stylesheet">
 
+    @stack('styles')
+
 
 </head>

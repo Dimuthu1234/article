@@ -1,8 +1,15 @@
 @extends('layouts.admin')
 
+@push('styles')
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
+@endpush
+
 @section('title-content', 'ALL ARTICLES')
 
 @section('admin-content')
+
+    @include('shared._sessionmessage')
+
     <div class="row" style="margin-top: 2%">
         <div class="col-md-4">
             <nav aria-label="breadcrumb">
@@ -22,24 +29,37 @@
     <hr>
     <div class="row">
         <div class="col-md-12">
-            <table class="table table-striped table-responsive">
+            <table class="table table-striped table-responsive" id="myTable">
                 <thead>
                 <tr>
                     <th>ID</th>
                     <th>Thumbnail</th>
                     <th>Title</th>
-                    <th>Enable</th>
+                    <th>Short Description</th>
+                    <th>Is Enable</th>
                 </tr>
                 </thead>
                 <tbody>
+                @foreach($articles as $article)
                 <tr>
-                    <td>kygkk</td>
-                    <td>egrg</td>
-                    <td>grger</td>
-                    <td>egtr</td>
+                    <td>{{ $article->id }}</td>
+                    <td><img class="img-list" src="{{asset('images/article/thumbnail/'.$article->thumbnail)}}"></td>
+                    <td>{{ $article->title }}</td>
+                    <td>{{ $article->short_description }}</td>
+                    <td>@if($article->is_enable == 1 )<i class="fa fa-check" style="color: green"></i> @else <i class="fa fa-times" style="color: red"></i> @endif</td>
                 </tr>
+                @endforeach
                 </tbody>
             </table>
         </div>
     </div>
 @endsection
+
+@push('scripts')
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready( function () {
+            $('#myTable').DataTable();
+        } );
+    </script>
+@endpush

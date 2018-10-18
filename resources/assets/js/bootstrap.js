@@ -12,9 +12,6 @@ try {
 
     require('bootstrap-sass');
 
-    // require('bootstrap/js/tooltip');
-    // require('bootstrap/js/transition');
-    // require('bootstrap/less/bootstrap.less');
     require('summernote/dist/summernote.css');
     require('summernote');
 

@@ -23,7 +23,7 @@ class CreateArticlesTable extends Migration
             $table->string('image')->nullable();
             $table->integer('is_enable')->default(0);
             $table->integer('user_id')->nullable();
-            $table->integer('slug')->unique();
+            $table->string('slug')->unique();
             $table->timestamps();
         });
     }

@@ -5,8 +5,18 @@ namespace App\Http\Controllers;
 use App\Article;
 use Illuminate\Http\Request;
 
+use Session;
+
 class ArticlesController extends Controller
 {
+    protected $articles;
+
+    public function __construct()
+    {
+        $this->articles = Article::all();
+    }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +24,8 @@ class ArticlesController extends Controller
      */
     public function index()
     {
-        return view('admin.article.index');
+        return view('admin.article.index')
+            ->with('articles', $this->articles);
     }
 
     /**
@@ -35,7 +46,28 @@ class ArticlesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = $request->all();
+        if ($request->hasFile('thumbnail')){
+            $name = $input['title'];
+            $formtedName = str_replace([' ','%'], '-', $name);
+
+            $imageName = $formtedName . '-' . (string) rand(00000, 99999)  . '.' . $request->file('thumbnail')->getClientOriginalExtension();
+            $request->file('thumbnail')->move(public_path().'/images/article/thumbnail', $imageName);
+            $input['thumbnail'] = $imageName;
+        }
+
+        if ($request->hasFile('image')){
+            $name = $input['title'];
+            $formtedName = str_replace([' ','%'], '-', $name);
+
+            $imageName = $formtedName . '-' . (string) rand(00000, 99999)  . '.' . $request->file('image')->getClientOriginalExtension();
+            $request->file('image')->move(public_path().'/images/article/image', $imageName);
+            $input['image'] = $imageName;
+        }
+
+        $article = Article::create($input);
+        Session::flash('success','Article has been added !');
+        return redirect()->route('article.index');
     }
 
     /**

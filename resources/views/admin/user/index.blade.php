@@ -1,5 +1,9 @@
 @extends('layouts.admin')
 
+@push('styles')
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
+@endpush
+
 @section('title-content', 'ALL USERS')
 
 @section('admin-content')
@@ -22,7 +26,7 @@
     <hr>
     <div class="row">
         <div class="col-md-12">
-            <table class="table table-striped table-responsive">
+            <table class="table table-striped table-responsive" id="myTable">
                 <thead>
                 <tr>
                     <th>ID</th>
@@ -43,3 +47,12 @@
         </div>
     </div>
 @endsection
+
+@push('scripts')
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready( function () {
+            $('#myTable').DataTable();
+        } );
+    </script>
+@endpush
