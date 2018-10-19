@@ -36,6 +36,15 @@ class Article extends Model
         return $this->belongsTo('App\User', 'user_id');
     }
 
+    public function metaKeywords()
+    {
+        return $this->belongsToMany('App\MetaKeyword')
+            ->withTimestamps();
+    }
 
+    public function getMetaKeywordListAttribute()
+    {
+        return $this->metaKeywords->pluck('id')->all();
+    }
 
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Article;
+use App\MetaKeyword;
 use Illuminate\Http\Request;
 
 use Session;
@@ -10,10 +11,12 @@ use Session;
 class ArticlesController extends Controller
 {
     protected $articles;
+    protected $metaKeywordList;
 
     public function __construct()
     {
         $this->articles = Article::all();
+        $this->metaKeywordList = MetaKeyword::get()->pluck('keyword', 'id');
     }
 
 
@@ -35,7 +38,8 @@ class ArticlesController extends Controller
      */
     public function create()
     {
-        return view('admin.article.create');
+        return view('admin.article.create')
+            ->with('metaKeywordList', $this->metaKeywordList);
     }
 
     /**
@@ -46,6 +50,17 @@ class ArticlesController extends Controller
      */
     public function store(Request $request)
     {
+
+        $list = $request->meta_keyword_list;
+        $strings_array = [];
+        $id_array = [];
+        for ($x = 0; $x < sizeof($list); $x++) {
+            if (is_numeric($list[$x])) {
+                $id_array[] = $list[$x];
+            } else {
+                $strings_array[] = $list[$x];
+            }
+        }
         $input = $request->all();
         if ($request->hasFile('thumbnail')){
             $name = $input['title'];
@@ -65,7 +80,21 @@ class ArticlesController extends Controller
             $input['image'] = $imageName;
         }
 
+
         $article = Article::create($input);
+        if ($strings_array == null) {
+            $article->metaKeywords()->sync((array) $request->input('meta_keyword_list'));
+        }else
+        {
+            foreach ($strings_array as $sa) {
+                $string_labels[] = MetaKeyword::create(['keyword' => $sa]);
+            }
+
+            for ($y = 0; $y < sizeof($string_labels); $y++) {
+                $string_labels_ids[] = $string_labels[$y]->id;
+            }
+            $article->metaKeywords()->sync(array_merge((array)$id_array, (array)$string_labels_ids));
+        }
         Session::flash('success','Article has been added !');
         return redirect()->route('article.index');
     }

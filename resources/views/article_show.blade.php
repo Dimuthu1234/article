@@ -2,7 +2,19 @@
 
 @section('meta-item')
 
+    <meta name="author" content="{{ $article->user->name }}" />
+    <meta name="copyright" content="Copyright by NEWSBIT. All Rights Reserved." />
+    <meta name="classification" content="to be develop" />
+
     <meta name="description" content="{{ $article->meta_description }}">
+    <meta name="keywords" content="{{ $article->metaKeywords->implode('keyword', ',') }}">
+    <meta property="fb:app_id" content="977979472264860" />
+    <meta property="og:site_name" content="NEWSBIT - "/>
+    <meta property="og:title" content="{{ $article->title }}"/>
+    <meta property="og:description" content="{{ $article->meta_description }}"/>
+    <meta property="og:image" content="{{ url('images/article/thumbnail/'.$article->thumbnail) }}?>">
+    <meta property="og:url" content="{{ url('article/'.$article->slug) }}">
+    <meta property="og:type" content="article"/>
 
 @endsection
 

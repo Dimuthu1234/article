@@ -6,8 +6,13 @@
 @import "variables";
 @import "common";
 
+
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
 // font awesome
 @import "~font-awesome/scss/font-awesome.scss";
+
+// select2
+
+@import "~select2/dist/css/select2.min";

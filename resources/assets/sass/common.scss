@@ -327,3 +327,38 @@ input:checked + .slider {
     }
   //}
 }
+
+.select2-container--default .select2-selection--multiple {
+  background-color: white !important;
+  border: 1px solid #ccd0d2 !important;
+  border-radius: 0px !important;
+  cursor: text !important;
+  width: 100% !important;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+  background: transparent;
+  border: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-appearance: textfield;
+  width: 100% !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #f8b50033 !important;
+  border: 1px solid #f89a00 !important;
+  border-radius: 0 !important;
+  cursor: default !important;
+  float: left !important;
+  margin-right: 5px !important;
+  margin-top: 5px !important;
+  padding: 0 5px !important;
+  color: #333 !important;
+}
+
+
+.selection{
+  width: 100% !important;
+}

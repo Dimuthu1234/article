@@ -33,6 +33,8 @@ class WelcomeController extends Controller
 
     public function articleShow($slug){
         $article = Article::where('slug', $slug)->first();
+
+//        return [$article->metaKeywords];
         return view('article_show')
         ->with('article', $article);
     }

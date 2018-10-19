@@ -48,6 +48,11 @@ if (token) {
  * allows your team to easily build robust real-time web applications.
  */
 
+
+require('select2');
+
+
+
 // import Echo from 'laravel-echo'
 
 // window.Pusher = require('pusher-js');
