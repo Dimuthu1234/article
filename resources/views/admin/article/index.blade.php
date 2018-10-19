@@ -45,7 +45,7 @@
                     <td>{{ $article->id }}</td>
                     <td><img class="img-list" src="{{asset('images/article/thumbnail/'.$article->thumbnail)}}"></td>
                     <td>{{ $article->title }}</td>
-                    <td>{{ $article->short_description }}</td>
+                    <td>{{ str_limit($article->short_description, 150) }}</td>
                     <td>@if($article->is_enable == 1 )<i class="fa fa-check" style="color: green"></i> @else <i class="fa fa-times" style="color: red"></i> @endif</td>
                 </tr>
                 @endforeach
