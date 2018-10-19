@@ -43,7 +43,7 @@
             <script async src="https://static.addtoany.com/menu/page.js"></script>
             <!-- AddToAny END -->
 
-            <p style="margin-top: 4%">{!! $article->description !!}</p>
+            <p style="margin-top: 4%; margin-bottom: 100px">{!! $article->description !!}</p>
         </div>
     </div><!-- col-sm-6 -->
 @endsection
