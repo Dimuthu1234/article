@@ -46,6 +46,7 @@
             <div style="height: auto">
                 {!! $article->description !!}
             </div>
+            <div class="fb-comments" data-href="{{ url('article/'.$article->slug) }}" data-numposts="10"></div>
         </div>
     </div><!-- col-sm-6 -->
 @endsection
