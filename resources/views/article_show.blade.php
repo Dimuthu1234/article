@@ -44,7 +44,7 @@
             <script async src="https://static.addtoany.com/menu/page.js"></script>
             <!-- AddToAny END -->
             <div style="position: relative">
-                <p style="margin-top: 4%;">{!! $article->description !!}</p>
+                {!! $article->description !!}
             </div>
         </div>
     </div><!-- col-sm-6 -->
