@@ -43,7 +43,7 @@
             </div>
             <script async src="https://static.addtoany.com/menu/page.js"></script>
             <!-- AddToAny END -->
-            <div style="position: relative">
+            <div style="position: fixed">
                 {!! $article->description !!}
             </div>
         </div>
